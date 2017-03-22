@@ -22,9 +22,19 @@ public class Chair {
 		this.seat = true;
 	}
 	
+	public boolean isSeat() {
+		
+		return this.seat;
+	}
+	
 	public void addFeet() {
 		
 		this.feet = true;
+	}
+	
+	public boolean isFeet() {
+		
+		return this.feet;
 	}
 	
 	public void addBackrest() {
@@ -32,15 +42,31 @@ public class Chair {
 		this.backrest = true;
 	}
 	
+	public boolean isBackrest() {
+		
+		return this.backrest;
+	}
+	
 	public void addStabilizerBar() {
 	
 		this.stabilizerBar = true;
+	}
+	
+	public boolean isStabilizerBar() {
+		
+		return this.stabilizerBar;
 	}
 	
 	public void addPackage() {
 		
 		this.packaged = true;
 	}
+	
+	public boolean isPackage() {
+		
+		return this.packaged;
+	}
+	
 	public String toString() {
 		
 		return (seat ? "Seat" : "Defect seat") + 
